@@ -37,24 +37,24 @@ When all five containers are ready the command will open the browser to the Airf
 =============================================
 
 ===============================================================
-astro dev init                                         ( for the first time, initialize the codes)
-astro dev start                                        (spin up the containers and starts local airflow)
-astro dev stop                                         (stops thecontainers from running)
-astro dev kill                                         (kills the instance, will lose all the data unless persisted externally)
+- astro dev init                                         ( for the first time, initialize the codes)
+- astro dev start                                        (spin up the containers and starts local airflow)
+- astro dev stop                                         (stops thecontainers from running)
+- astro dev kill                                         (kills the instance, will lose all the data unless persisted externally)
 
 
 ==============================================================
-git init                                                 ( for initialiing a local branch)
-git add <files> or git add . (for all changes)           ( this will add the files      )
-git status                                               ( this will check the status of addition of files before commit)
-git commit -m "Commmit Message"                          ( creates the commit with the message)
-git remote add origin <remote-repo-url>                  (this will add remote repo to push/ pull the code changes)
-git push origin <branch>                                 (this will push the code into remote repo)
-git pull --rebase                                        (this will pull the code from the remote repo and merges with the local repo)
+- git init                                                 ( for initialiing a local branch)
+- git add <files> or git add . (for all changes)           ( this will add the files      )
+- git status                                               ( this will check the status of addition of files before commit)
+- git commit -m "Commmit Message"                          ( creates the commit with the message)
+- git remote add origin <remote-repo-url>                  (this will add remote repo to push/ pull the code changes)
+- git push origin <branch>                                 (this will push the code into remote repo)
+- git pull --rebase                                        (this will pull the code from the remote repo and merges with the local repo)
 
 ==================================================================
-cd                                    (change directory)
-mkdir                                 (create/ make a new directory)
+- cd                                    (change directory)
+- mkdir                                 (create/ make a new directory)
 ls                                    (lists the files)
 rm                                    (remove / delete the files)
 rmdir                                 (remove an entire directory)
