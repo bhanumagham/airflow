@@ -3,7 +3,7 @@ Overview
 
 I created this repo using the Astronomer Quick Airflow Setup for local testing of Airflow Dags and other projects. Below is the quick tips and other info for Astro CLI.
 
-I will reorganize the project structure late, but for nw this is great to get started.
+I will reorganize the project structure later, but for n0w this is great to get started.
 
 Project Contents
 ================
@@ -18,7 +18,7 @@ Your Astro project contains the following files and folders:
 - plugins: Add custom or community plugins for your project to this file. It is empty by default.
 - airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
 
-Deploy Your Project Locally
+Airflow Local
 ===========================
 
 Start Airflow on your local machine by running 'astro dev start'.
@@ -33,14 +33,38 @@ This command will spin up five Docker containers on your machine, each for a dif
 
 When all five containers are ready the command will open the browser to the Airflow UI at http://localhost:8080/. You should also be able to access your Postgres Database at 'localhost:5432/postgres' with username 'postgres' and password 'postgres'.
 
-Note: If you already have either of the above ports allocated, you can either [stop your existing Docker containers or change the port](https://www.astronomer.io/docs/astro/cli/troubleshoot-locally#ports-are-not-available-for-my-local-airflow-webserver).
+### Important Git / CLI / Astro Commands
+=============================================
 
-Deploy Your Project to Astronomer
-=================================
+===============================================================
+astro dev init                                         ( for the first time, initialize the codes)
+astro dev start                                        (spin up the containers and starts local airflow)
+astro dev stop                                         (stops thecontainers from running)
+astro dev kill                                         (kills the instance, will lose all the data unless persisted externally)
 
-If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://www.astronomer.io/docs/astro/deploy-code/
 
-Contact
-=======
+==============================================================
+git init                                                 ( for initialiing a local branch)
+git add <files> or git add . (for all changes)           ( this will add the files      )
+git status                                               ( this will check the status of addition of files before commit)
+git commit -m "Commmit Message"                          ( creates the commit with the message)
+git remote add origin <remote-repo-url>                  (this will add remote repo to push/ pull the code changes)
+git push origin <branch>                                 (this will push the code into remote repo)
+git pull --rebase                                        (this will pull the code from the remote repo and merges with the local repo)
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+==================================================================
+cd                                    (change directory)
+mkdir                                 (create/ make a new directory)
+ls                                    (lists the files)
+rm                                    (remove / delete the files)
+rmdir                                 (remove an entire directory)
+cp                                    (copy the file)
+mv                                    (move the file)
+wget  or curl                         (download from URL)
+
+====================================================================
+hdfs dfs -ls                          (lists the files in the path from Hadoop)
+!gsutil ls                            (lists the files from GCS bucket)
+
+
+
