@@ -3,7 +3,7 @@ astro
 .env
 airflow_settings.yaml
 logs/
-notebooks/
+
 .venv
 airflow.db
 airflow.cfg
