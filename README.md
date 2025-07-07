@@ -8,7 +8,7 @@ I will reorganize the project structure later, but for n0w this is great to get 
 Project Contents
 ================
 
-Your Astro project contains the following files and folders:
+Astro project contains the following files and folders:
 - notebooks - This folder is used to push the notebooks that are used for the pipeline development.
 - dags: This folder contains the Python files for your Airflow DAGs. 
 - Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
