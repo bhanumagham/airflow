@@ -36,7 +36,6 @@ When all five containers are ready the command will open the browser to the Airf
 ### Important Git / CLI / Astro Commands
 =============================================
 
-===============================================================
 - astro dev init                                         ( for the first time, initialize the codes)
 - astro dev start                                        (spin up the containers and starts local airflow)
 - astro dev stop                                         (stops thecontainers from running)
@@ -55,16 +54,16 @@ When all five containers are ready the command will open the browser to the Airf
 ==================================================================
 - cd                                    (change directory)
 - mkdir                                 (create/ make a new directory)
-ls                                    (lists the files)
-rm                                    (remove / delete the files)
-rmdir                                 (remove an entire directory)
-cp                                    (copy the file)
-mv                                    (move the file)
-wget  or curl                         (download from URL)
+- ls                                    (lists the files)
+- rm                                    (remove / delete the files)
+- rmdir                                 (remove an entire directory)
+- cp                                    (copy the file)
+- mv                                    (move the file)
+- wget  or curl                         (download from URL)
 
 ====================================================================
-hdfs dfs -ls                          (lists the files in the path from Hadoop)
-!gsutil ls                            (lists the files from GCS bucket)
+- hdfs dfs -ls                          (lists the files in the path from Hadoop)
+- !gsutil ls                            (lists the files from GCS bucket)
 
 
 
